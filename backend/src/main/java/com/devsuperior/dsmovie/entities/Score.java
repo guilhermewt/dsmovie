@@ -6,6 +6,8 @@ import javax.persistence.Table;
 
 @Entity
 @Table(name = "tb_score")
+
+
 public class Score {
     
 	@EmbeddedId
