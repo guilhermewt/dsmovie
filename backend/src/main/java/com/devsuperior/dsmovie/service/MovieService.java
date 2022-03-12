@@ -21,7 +21,6 @@ public class MovieService {
 		Page<Movie> result = repository.findAll(pageable);
 		Page<MovieDTO> page = result.map(x -> new MovieDTO(x));
 		return page;
-		
 	}
 	
 	@Transactional(readOnly = true)
@@ -29,6 +28,5 @@ public class MovieService {
 		Movie result = repository.findById(id).get();
 	    MovieDTO dto = new MovieDTO(result);
 		return dto;
-		
 	}
 }
