@@ -1,8 +1,13 @@
 import MovieCards from "components/MovieCards";
 import Pagination from "components/Pagination";
-
+import axios from "axios";
+import { BASE_URL } from "utils/request";
 
 function Listing() {
+
+    axios.get(`${BASE_URL}/movies?size=12&page=0`).then(response => {console.log(response.data)});
+
+
     return (
         <>
 

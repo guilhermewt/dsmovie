@@ -21,6 +21,7 @@ public class Movie {
 	private Double score;
 	private Integer count;
 	private String image;
+
 	
 	@OneToMany(mappedBy = "id.movie")
 	private Set<Score> scores = new HashSet<>();
