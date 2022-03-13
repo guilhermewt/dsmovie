@@ -26,6 +26,8 @@ public class Movie {
 	@OneToMany(mappedBy = "id.movie")
 	private Set<Score> scores = new HashSet<>();
 	
+	
+	
 	public Movie() {
 	}
 
